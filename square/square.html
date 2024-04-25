@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: square 0.6s infinite;
+            transform: rotate(35deg);
+        }
+        @keyframes square{
+            0%{
+                transform: rotate(35deg)scale(0.7);
+            }
+            100%{
+                transform: rotate(35deg)scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+</body>
+</html>
